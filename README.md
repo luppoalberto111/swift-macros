@@ -60,3 +60,32 @@ struct UserStore {
   }
 }
 ```
+
+### AutoInit
+Automatically generate memberwise initializers for structs and classes
+
+```swift
+@AutoInit
+struct Person {
+  var name: String
+  var age: Int
+  var email: String?
+}
+
+// Expands to
+struct Person {
+  var name: String
+  var age: Int
+  var email: String?
+
+  init(
+    name: String,
+    age: Int,
+    email: String? = nil
+  ) {
+    self.name = name
+    self.age = age
+    self.email = email
+  }
+}
+```

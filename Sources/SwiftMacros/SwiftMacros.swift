@@ -11,3 +11,6 @@ public macro AssociatedValues() = #externalMacro(module: "Macros", type: "Associ
 
 @attached(member, names: named(init), named(shared))
 public macro Singleton() = #externalMacro(module: "Macros", type: "SingletonMacro")
+
+@attached(member, names: named(init))
+public macro AutoInit() = #externalMacro(module: "Macros", type: "AutoInitMacro")

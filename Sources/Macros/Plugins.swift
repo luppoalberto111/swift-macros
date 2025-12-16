@@ -7,6 +7,7 @@ struct Plugins: CompilerPlugin {
     URLMacro.self,
     SymbolMacro.self,
     AssociatedValuesMacro.self,
-    SingletonMacro.self
+    SingletonMacro.self,
+    AutoInitMacro.self
   ]
 }
