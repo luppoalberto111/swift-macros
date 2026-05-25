@@ -14,3 +14,6 @@ public macro Singleton() = #externalMacro(module: "Macros", type: "SingletonMacr
 
 @attached(member, names: named(init))
 public macro AutoInit() = #externalMacro(module: "Macros", type: "AutoInitMacro")
+
+@attached(member, names: arbitrary)
+public macro Lens() = #externalMacro(module: "Macros", type: "LensMacro")

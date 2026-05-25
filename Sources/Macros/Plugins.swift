@@ -8,6 +8,7 @@ struct Plugins: CompilerPlugin {
     SymbolMacro.self,
     AssociatedValuesMacro.self,
     SingletonMacro.self,
-    AutoInitMacro.self
+    AutoInitMacro.self,
+    LensMacro.self
   ]
 }

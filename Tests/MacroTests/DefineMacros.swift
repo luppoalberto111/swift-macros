@@ -9,6 +9,7 @@ let testMacros: [String: Macro.Type] = [
   "URL": URLMacro.self,
   "AssociatedValues": AssociatedValuesMacro.self,
   "Singleton": SingletonMacro.self,
-  "AutoInit": AutoInitMacro.self
+  "AutoInit": AutoInitMacro.self,
+  "Lens": LensMacro.self
 ]
 #endif
